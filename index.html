@@ -4,57 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <div class="header">
-            <!--Top Header-->
-            <div class="top-header">
-                <div class="top-header-left">
-                    <img src="icon-kit/magnify.svg" alt="search" class="icon">
-                    <input type="text" class="input-text">
+            <div class="top-h">
+                <div class="top-h-left">
+                    <img src="icon-kit/magnify.svg" alt="searcIcon" class="icon">
+                    <input type="text" class="text-input">
                 </div>
-                <div class="top-header-right">
-                    <div>
-                        <img src="icon-kit/bell-ring.svg" alt="notification" class="icon">
-                        <img src="pfp/img4.jpg" alt="profile" class="header-profile">
-                    </div>
-                    <p class="user-name">Wahyu Isnaeni</p>
-                </div>                
+                <div class="top-h-right">
+                    <img src="icon-kit/bell-ring.svg" alt="notificationIcon" class="notif-icon">
+                    <img src="pfp/img4.jpg" alt="profile-th" class="img-th">
+                    <p class="username">Marc Marquez</p>
+                </div>
             </div>
-            <!--Bottom header-->
-            <div class="bottom-header">
-                <div class="bottom-header-left">
-                    <div class="profile">
-                        <img src="pfp/img4.jpg" alt="" class="profile">
+            <div class="bottom-h">
+                <div class="bottom-h-left">
+                    <img src="pfp/img4.jpg" alt="" class="img-bh">
+                    <div class="greetings">
+                        <p>Hi there,</p>
+                        <p>Marc Marquez (@Marc93)</p>
                     </div>
-                    <div class="user-info">
-                        <div class="greetings"><p>Hi there,</p></div>
-                        <div class="bottom-header user-name"><p>Wahyu Isnaeni (@Ways1337)</p></div>
-                    </div>
+                </div>
+                <div class="bottom-h-right">
+                    <button class="button-activity">New</button>
+                    <button class="button-activity">Upload</button>
+                    <button class="button-activity">Share</button>
                 </div>
                 
-                <div class="bottom-header-right">
-                    <div class="button-event"></div>
-                    <div class="button-event"></div>
-                    <div class="button-event"></div>
-                </div>
             </div>
         </div>
-
+        <!-- Sidebar -->
         <div class="sidebar">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="dashboard">
+                <img src="icon-kit/view-dashboard.svg" alt="dashboard" class="dashboard-icon">
+               <li><span>Dashboard</span></li>
+            </div>
+            <div class="profile-sidebar">
+                <ul>
+                    <div class="home">
+                        <img src="icon-kit/home.svg" alt="home" class="side-icon">
+                        <li><span>Home</span></li>
+                    </div>
+                    <div class="profile">
+                        <img src="icon-kit/account.svg" alt="profile" class="side-icon">   
+                        <li><span>Profile</span></li>
+                    </div>
+                    <div class="messages">
+                        <img src="icon-kit/message.svg" alt="messages" class="side-icon">
+                        <li><span>Messages</span></li>
+                    </div>
+                    <div class="history">
+                        <img src="icon-kit/history.svg" alt="history" class="side-icon">
+                        <li><span>History</span></li>
+                    </div>
+                    <div class="tasks">
+                        <img src="icon-kit/file-document-multiple-outline.svg" alt="tasks" class="side-icon">
+                        <li><span>Tasks</span></li>
+                    </div>
+                    <div class="community">
+                        <img src="icon-kit/account-group.svg" alt="community" class="side-icon">
+                        <li><span>Communities</span></li>
+                    </div>
+                    
+                </ul>
+            </div>
+            <div class="utils">
+                <ul>
+                    <div class="settings">
+                        <img src="icon-kit/cog.svg" alt="settings" class="side-icon">
+                        <li><span>Settings</span></li>
+                    </div>
+                    
+                    <div class="supports">
+                        <img src="icon-kit/help-box.svg" alt="supports" class="side-icon">
+                        <li><span>Support</span></li>
+                    </div>
+                    <div class="privacy">
+                        <img src="icon-kit/shield-lock.svg" alt="privacy" class="side-icon">
+                        <li><span>Privacy</span></li>
+                    </div>
+                </ul>
+            </div>
         </div>
-
+        <!-- Content -->
         <div class="content">
-            <h2></h2>
             <div></div>
             <div></div>
         </div>
-        <div class="misc"></div>
+        <!-- news -->
+         <div class="news">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
     </div>
 </body>
 </html>
