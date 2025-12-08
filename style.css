@@ -29,8 +29,9 @@ ul{
     display: grid;
     grid-template-rows: repeat(2, minmax(min-content, auto));
     background-color: white;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
 
-    padding: 0 25px
+    padding: 0 25px;
 }
 
 .top-h{
@@ -258,7 +259,7 @@ li span:hover,
 
 .content-card{
     display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 25px;
 }
 
@@ -269,7 +270,6 @@ li span:hover,
     background-color: white;
     border-radius: 10px;
     min-width: 250px;
-    max-height: 350px;
     justify-content: space-evenly;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: all 0.2s ease;
@@ -305,11 +305,15 @@ li span:hover,
 
 .card-icon{
     display: grid;
-    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: repeat(3, max-content);
     grid-template-rows: min-content;
     justify-content: end;
     gap: 15px;
-    align-items: end;
+    align-content: end;
+}
+
+.icon-img:hover{
+    cursor: pointer;
 }
 
 .card-icon,
@@ -339,6 +343,8 @@ li span:hover,
     grid-template-rows: min-content 1fr min-content 1fr;
     gap: 15px;
     padding: 25px 50px;
+
+    max-width: 500px;
 }
 
 .news-title{
@@ -356,10 +362,15 @@ li span:hover,
     padding: 30px 50px;
     
     /* style */
-    min-width: 350px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
     transition: all 0.2s ease;
+}
+
+.news-card:hover{
+    cursor: default;
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 
 .news-card span{
@@ -374,12 +385,17 @@ li span:hover,
     background: white;
 
     /* style */
-    min-width: 350px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
     transition: all 0.2s ease;
 
     padding: 5px 50px;
+}
+
+.trending-card:hover{
+    cursor: default;
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
 }
 
 .trending-user{
